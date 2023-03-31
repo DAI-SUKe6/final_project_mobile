@@ -31,6 +31,12 @@ class CreateAccountScreen extends StatelessWidget {
             "สร้างบัญชีใหม่",
             style: theme.textTheme.headline1,
           ),
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          ),
         ),
         body: Container(
           decoration: BoxDecoration(
